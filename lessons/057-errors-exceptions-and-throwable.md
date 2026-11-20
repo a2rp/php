@@ -327,4 +327,4 @@ Do not use exceptions for ordinary branching such as checking whether a value ex
 
 | Previous chapter | Chapter Q&A | Chapter example | Next chapter |
 | --- | --- | --- | --- |
-| [056 - Serialization and safe data exchange](056-serialization-and-safe-data-exchange.md) | [Open Q&A](../qnas/057-errors-exceptions-and-throwable.md) | [Open example](../examples/057-errors-exceptions-and-throwable.md) | [058 - Namespaces and autoloading](058-namespaces-and-autoloading.md) |
+| [056 - Serialization and safe data exchange](056-serialization-and-safe-data-exchange.md) | [Open Q&A](../qnas/057-errors-exceptions-and-throwable.md) | [Open example](../examples/057-errors-exceptions-and-throwable.md) | [058 - try, catch, finally, and throwing exceptions](058-try-catch-finally-and-throwing-exceptions.md) |

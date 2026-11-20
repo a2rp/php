@@ -187,4 +187,4 @@ This callback does not resume the code that failed. It should not reveal a stack
 
 | Previous chapter | Chapter Q&A | Chapter lesson | Next chapter |
 | --- | --- | --- | --- |
-| [056 - Serialization and safe data exchange](056-serialization-and-safe-data-exchange.md) | [Open Q&A](../qnas/057-errors-exceptions-and-throwable.md) | [Read lesson](../lessons/057-errors-exceptions-and-throwable.md) | [058 - Namespaces and autoloading](058-namespaces-and-autoloading.md) |
+| [056 - Serialization and safe data exchange](056-serialization-and-safe-data-exchange.md) | [Open Q&A](../qnas/057-errors-exceptions-and-throwable.md) | [Read lesson](../lessons/057-errors-exceptions-and-throwable.md) | [058 - try, catch, finally, and throwing exceptions](058-try-catch-finally-and-throwing-exceptions.md) |

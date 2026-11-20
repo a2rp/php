@@ -480,4 +480,4 @@ set_exception_handler(
 
 | Previous chapter | Chapter lesson | Chapter example | Next chapter |
 | --- | --- | --- | --- |
-| [056 - Serialization and safe data exchange](../lessons/056-serialization-and-safe-data-exchange.md) | [Read lesson](../lessons/057-errors-exceptions-and-throwable.md) | [Open example](../examples/057-errors-exceptions-and-throwable.md) | [058 - Namespaces and autoloading](../lessons/058-namespaces-and-autoloading.md) |
+| [056 - Serialization and safe data exchange](../lessons/056-serialization-and-safe-data-exchange.md) | [Read lesson](../lessons/057-errors-exceptions-and-throwable.md) | [Open example](../examples/057-errors-exceptions-and-throwable.md) | [058 - try, catch, finally, and throwing exceptions](../lessons/058-try-catch-finally-and-throwing-exceptions.md) |
