@@ -80,12 +80,12 @@ $newYork = new DateTimeZone('America/New_York');
 $beforeSpringForward = new DateTimeImmutable('2021-03-13 12:00:00', $newYork);
 
 $oneCalendarDayLater = $beforeSpringForward->add(new DateInterval('P1D'));
-$24ElapsedHoursLater = $beforeSpringForward->add(new DateInterval('PT24H'));
+$after24Hours = $beforeSpringForward->add(new DateInterval('PT24H'));
 
 echo "Daylight-saving comparison:\n";
 echo 'Start: ' . $beforeSpringForward->format('Y-m-d H:i:s P') . "\n";
 echo 'One calendar day later: ' . $oneCalendarDayLater->format('Y-m-d H:i:s P') . "\n";
-echo 'After 24 elapsed hours: ' . $24ElapsedHoursLater->format('Y-m-d H:i:s P') . "\n";
+echo 'After 24 elapsed hours: ' . $after24Hours->format('Y-m-d H:i:s P') . "\n";
 echo 'Elapsed seconds in that calendar day: '
     . ($oneCalendarDayLater->getTimestamp() - $beforeSpringForward->getTimestamp())
     . "\n";
