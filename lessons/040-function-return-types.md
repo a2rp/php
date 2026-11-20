@@ -243,7 +243,24 @@ function printStatus(): void
 printStatus();
 ~~~
 
-Here the function explicitly declares **void**. Omitting a type declaration is different: it leaves the function's return contract unspecified. For new code, declare a useful return type when the function returns data, or **void** when it only performs an action.
+An untyped function that reaches its end without a `return` statement produces `null`:
+
+~~~php
+<?php
+function getUnspecifiedValue()
+{
+}
+
+var_dump(getUnspecifiedValue());
+~~~
+
+Output:
+
+~~~text
+NULL
+~~~
+
+This is different from an explicitly **void** function: **void** says there is no result for the caller to use, while an untyped function simply has no declared return contract. For new code, declare a useful return type when the function returns data, or **void** when it only performs an action.
 
 The earlier [chapter 036 on returning values](036-returning-values-and-ending-execution.md) explains the **return** statement and its behavior in more detail.
 
