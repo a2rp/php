@@ -139,6 +139,31 @@ $colors[] = "purple";
 
 Array append syntax **[]** is different from array union with **+**.
 
+### Comparing arrays
+
+Arrays can also be compared with the equality operators:
+
+- **==** checks that both arrays have the same key/value pairs. Their element order can differ.
+- **===** checks that the key/value pairs match in the same order and that their values have the same types.
+- **!=** and **<>** are loose array inequality; **!==** means the arrays are not identical.
+
+~~~php
+<?php
+$first = ["color" => "blue", "size" => "M"];
+$reordered = ["size" => "M", "color" => "blue"];
+
+var_dump($first == $reordered);
+var_dump($first === $reordered);
+~~~
+
+Output:
+
+~~~text
+bool(true)
+bool(false)
+~~~
+
+Use **===** when array order and value types are part of the requirement. These are the same comparison operators introduced in the previous chapter, with array-specific comparison rules.
 ## Bitwise operators
 
 Bitwise operators inspect or change the individual bits in integer values. They are used in areas such as flags, permissions, protocol fields, and low-level data formats.
