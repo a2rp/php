@@ -92,7 +92,7 @@ B. **-2**<br>
 C. **-1**<br>
 D. **0**
 
-**Answer: C.** The remainder has the same sign as the dividend, so **-8 % 3** is **-2**? Let's calculate: **-8 = (-3 × 3) + 1** is not the PHP convention. PHP's result is **-2**, because the quotient truncates toward zero: **-8 = (-2 × 3) + (-2)**.
+**Answer: B.** The remainder has the same sign as the dividend. PHP truncates the quotient toward zero, so **-8 % 3** is **-2**.
 
 ### 11. Which operator updates a numeric variable by multiplying it by a value?
 
