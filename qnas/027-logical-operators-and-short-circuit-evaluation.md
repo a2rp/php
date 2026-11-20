@@ -315,10 +315,14 @@ bool(false)
 
 ~~~php
 <?php
+function showRightSide(): bool
+{
+    echo "right side" . PHP_EOL;
+    return true;
+}
+
 echo "start" . PHP_EOL;
-
-$result = false && print "right side" . PHP_EOL;
-
+$result = false && showRightSide();
 echo "end" . PHP_EOL;
 ~~~
 
