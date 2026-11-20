@@ -251,7 +251,7 @@ This lets a generator compose smaller sequences without manually forwarding ever
 function values(): Generator
 {
     yield 'start';
-    yield from ['left' => 'L', 'right' => 'R'];
+    yield from [0 => 'L', 1 => 'R'];
     yield 'end';
 }
 
@@ -262,7 +262,14 @@ echo implode(', ', $preservingKeys), "\n";
 echo implode(', ', $sequentialValues), "\n";
 ~~~
 
-The first collection preserves keys. The automatically assigned key after the keyed delegation may overlap with an existing integer key, so it can replace a value in the resulting array. Passing **false** as the second argument to **iterator_to_array()** discards keys and stores every yielded value at the next numeric index.
+Output:
+
+~~~
+L, end
+start, L, R, end
+~~~
+
+The first collection preserves keys. The delegated values use integer keys **0** and **1**, so they overwrite earlier or later yielded values that use those same keys. Passing **false** as the second argument to **iterator_to_array()** discards keys and stores every yielded value at the next numeric index.
 
 When keys matter, choose and manage them deliberately.
 
