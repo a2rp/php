@@ -76,13 +76,17 @@ try {
 }
 ~~~
 
-Put more specific subclasses before their parents. If a RuntimeException catch comes first, it also matches an InvalidArgumentException because InvalidArgumentException extends LogicException, not RuntimeException; choose the hierarchy carefully. A safer example of parent and child ordering is:
+Put more specific subclasses before their parents when they share the same branch. The earlier InvalidArgumentException and RuntimeException catches are siblings under Exception, so they handle separate types. This example uses a custom child class to show the parent-and-child order:
 
 ~~~php
+final class PaymentTimeoutException extends RuntimeException
+{
+}
+
 try {
     performOperation();
-} catch (LengthException $exception) {
-    // Handle this specific RuntimeException subtype first.
+} catch (PaymentTimeoutException $exception) {
+    // Handle this specific runtime failure first.
 } catch (RuntimeException $exception) {
     // Handle other runtime failures.
 }
