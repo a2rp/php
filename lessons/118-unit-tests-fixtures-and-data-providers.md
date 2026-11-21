@@ -67,8 +67,8 @@ A data provider supplies several input sets to one test method. PHPUnit runs the
 In PHPUnit 13, connect a public static provider method to the test with `#[DataProvider('providerMethodName')]`:
 
 ~~~php
-use PHPUnit\\Framework\\Attributes\\DataProvider;
-use PHPUnit\\Framework\\TestCase;
+use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\TestCase;
 
 final class AdditionTest extends TestCase
 {
