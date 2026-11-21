@@ -147,21 +147,21 @@ class PlainFormatter extends Formatter
     }
 }
 
-class UppercaseFormatter extends Formatter
+class PrefixedFormatter extends Formatter
 {
     public function format(string $text): string
     {
-        return strtoupper(parent::format($text));
+        return "[REPORT] " . parent::format($text);
     }
 }
 
 $plainReport = new Report(new PlainFormatter());
-$uppercaseReport = new Report(new UppercaseFormatter());
+$prefixedReport = new Report(new PrefixedFormatter());
 ~~~
 
 Both objects can be given to `Report` because they extend `Formatter`. The second preserves the parent's formatting and applies its own behavior.
 
-A shared interface can express a contract without requiring a shared implementation. Interfaces are covered in [Interfaces and contracts](069-interfaces-and-contracts.md).
+A shared interface can express a contract without requiring a shared implementation. Interfaces are covered in [Interfaces and contracts](070-interfaces-and-contracts.md).
 
 Whether you use a parent class or an interface, the caller and collaborator need to agree on the public behavior the client uses. Chapter 067 covers compatible method overrides and substitutability.
 
