@@ -100,11 +100,11 @@ Create `tests/DiscountCalculatorTest.php`:
 
 declare(strict_types=1);
 
-namespace Learning\\Tests;
+namespace Learning\Tests;
 
 use InvalidArgumentException;
-use Learning\\DiscountCalculator;
-use PHPUnit\\Framework\\TestCase;
+use Learning\DiscountCalculator;
+use PHPUnit\Framework\TestCase;
 
 final class DiscountCalculatorTest extends TestCase
 {
