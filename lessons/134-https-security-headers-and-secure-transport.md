@@ -159,8 +159,7 @@ curl_setopt_array($curl, [
 $response = curl_exec($curl);
 
 if ($response === false) {
-    // Log a redacted operational diagnostic; return a generic error to visitors.
-    $error = curl_error($curl);
+    // Do not expose raw cURL details to visitors; redact them before logging.
     curl_close($curl);
     throw new RuntimeException('The upstream HTTPS request failed.');
 }
