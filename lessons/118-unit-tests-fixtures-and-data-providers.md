@@ -46,9 +46,11 @@ Each test starts with its own cart. A mutation in one test cannot silently affec
 `tearDown()` runs after a test and is useful when that test owns a resource that must be released, such as a temporary file or a manually started process:
 
 ~~~php
+private ?string $temporaryFile = null;
+
 protected function tearDown(): void
 {
-    if (is_file($this->temporaryFile)) {
+    if ($this->temporaryFile !== null && is_file($this->temporaryFile)) {
         unlink($this->temporaryFile);
     }
 }
