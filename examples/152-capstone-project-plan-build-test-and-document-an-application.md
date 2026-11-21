@@ -1037,7 +1037,7 @@ php -l templates/book-list.php
 
 Create **README.md**:
 
-~~~markdown
+~~~~markdown
 # Reading tracker
 
 A small, single-user PHP application for tracking books you plan to read, are reading, or have finished.
@@ -1102,7 +1102,7 @@ The database is stored at var/reading-tracker.sqlite and is excluded from Git.
 - Add migrations and a documented backup and restore process.
 - Add accounts and authorization before supporting multiple users.
 - Add pagination if the list grows.
-~~~
+~~~~
 
 This README gives another developer a repeatable setup path, the main routes, checks to perform, and the decisions that should not be mistaken for production guarantees.
 
