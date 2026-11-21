@@ -151,7 +151,7 @@ A non-empty name is required.
 2. **Read query data:** For a GET request, it reads `name` from `$_GET`.
 3. **Read form data:** For a POST request with a supported form content type, it reads `name` from `$_POST`.
 4. **Read JSON data:** For a JSON POST, it reads the raw body from `php://input` and decodes it with `JSON_THROW_ON_ERROR`. Invalid JSON produces a `400` response.
-5. **Validate the decoded value:** The decoded JSON must be an array before the code tries to read `name`. The name must then be a non-empty string.
+5. **Validate the decoded value:** The decoded JSON must be a JSON object before the code tries to read `name`. The name must then be a non-empty string.
 6. **Reject other methods:** The endpoint lists its supported methods in `Allow`, returns `405`, and exits without continuing into the success path.
 7. **Prepare the response:** `sendText()` sets the status and content type before printing the body. It exits after sending the response so no later output is appended.
 
