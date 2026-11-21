@@ -114,6 +114,6 @@ A project should also declare its version requirements in its dependency or depl
 
 ## Chapter navigation
 
-| Chapter lesson | Chapter Q&A | Next chapter |
-| --- | --- | --- |
-| [Read this lesson](../lessons/003-php-releases-versions-and-compatibility.md) | [Open Q&A](../qnas/003-php-releases-versions-and-compatibility.md) | [004 - Install PHP and inspect the runtime](../lessons/004-install-php-and-inspect-the-runtime.md) |
+| Previous chapter | Chapter lesson | Chapter Q&A | Next chapter |
+| --- | --- | --- | --- |
+| [002 - How PHP fits into a web application](../lessons/002-how-php-fits-into-a-web-application.md) | [Read this lesson](../lessons/003-php-releases-versions-and-compatibility.md) | [Open Q&A](../qnas/003-php-releases-versions-and-compatibility.md) | [004 - Install PHP and inspect the runtime](../lessons/004-install-php-and-inspect-the-runtime.md) |

@@ -117,6 +117,6 @@ This report describes only the runtime that executed this script. It does not ve
 
 ## Chapter navigation
 
-| Chapter lesson | Chapter Q&A | Next chapter |
-| --- | --- | --- |
-| [Read this lesson](../lessons/004-install-php-and-inspect-the-runtime.md) | [Open Q&A](../qnas/004-install-php-and-inspect-the-runtime.md) | [005 - Run PHP from the command line and built-in server](../lessons/005-run-php-from-the-command-line-and-built-in-server.md) |
+| Previous chapter | Chapter lesson | Chapter Q&A | Next chapter |
+| --- | --- | --- | --- |
+| [003 - PHP releases, versions, and compatibility](../lessons/003-php-releases-versions-and-compatibility.md) | [Read this lesson](../lessons/004-install-php-and-inspect-the-runtime.md) | [Open Q&A](../qnas/004-install-php-and-inspect-the-runtime.md) | [005 - Run PHP from the command line and built-in server](../lessons/005-run-php-from-the-command-line-and-built-in-server.md) |

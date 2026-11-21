@@ -148,6 +148,6 @@ The value is inserted into an HTML text node, so **htmlspecialchars** converts s
 
 ## Chapter navigation
 
-| Chapter lesson | Chapter Q&A | Next chapter |
-| --- | --- | --- |
-| [Read this lesson](../lessons/002-how-php-fits-into-a-web-application.md) | [Open Q&A](../qnas/002-how-php-fits-into-a-web-application.md) | [003 - PHP releases, versions, and compatibility](../lessons/003-php-releases-versions-and-compatibility.md) |
+| Previous chapter | Chapter lesson | Chapter Q&A | Next chapter |
+| --- | --- | --- | --- |
+| [001 - Introduction to PHP](../lessons/001-introduction-to-php.md) | [Read this lesson](../lessons/002-how-php-fits-into-a-web-application.md) | [Open Q&A](../qnas/002-how-php-fits-into-a-web-application.md) | [003 - PHP releases, versions, and compatibility](../lessons/003-php-releases-versions-and-compatibility.md) |
