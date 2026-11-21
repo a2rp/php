@@ -328,4 +328,4 @@ Property hooks require PHP 8.4 or later. They do not apply to static properties 
 
 | Previous chapter | Chapter Q&A | Chapter example | Next chapter |
 | --- | --- | --- | --- |
-| [074 - Constructor property promotion](074-constructor-property-promotion.md) | [Q&A](../qnas/075-property-hooks.md) | [Example](../examples/075-property-hooks.md) | [076 - Asymmetric property visibility](076-asymmetric-property-visibility.md) |
+| [074 - Constructor property promotion](074-constructor-property-promotion.md) | [Q&A](../qnas/075-property-hooks.md) | [Example](../examples/075-property-hooks.md) | [076 - Magic methods](076-magic-methods.md) |
