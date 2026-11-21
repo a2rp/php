@@ -134,4 +134,4 @@ For local development, reporting all relevant levels makes problems easier to fi
 
 | Previous chapter | Chapter Q&A | Chapter lesson | Next chapter |
 | :--- | :--- | :--- | :--- |
-| [058 - PHP exceptions and throwable types](../lessons/058-php-exceptions-and-throwable-types.md) | [Q&A](../qnas/059-php-errors-exceptions-and-error-categories.md) | [Lesson](../lessons/059-php-errors-exceptions-and-error-categories.md) | [060 - Error reporting, handlers, and assertions](../lessons/060-error-reporting-handlers-and-assertions.md) |
+| [058 - Try, Catch, Finally, and Throwing Exceptions](../lessons/058-try-catch-finally-and-throwing-exceptions.md) | [Q&A](../qnas/059-php-errors-exceptions-and-error-categories.md) | [Lesson](../lessons/059-php-errors-exceptions-and-error-categories.md) | [060 - Error reporting, handlers, and assertions](../lessons/060-error-reporting-handlers-and-assertions.md) |
