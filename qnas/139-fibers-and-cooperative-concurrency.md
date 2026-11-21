@@ -194,9 +194,9 @@ echo $fiber->start(), PHP_EOL;
 var_dump($fiber->resume());
 ~~~
 
-**Answer:** It prints paused, then bool(false) is not printed; var_dump() prints NULL.
+**Answer:** It prints paused, followed by NULL.
 
-**Explanation:** start() receives the value passed to suspend(). On resume, the Fiber continues and returns normally, so resume() returns null. The bool(false) wording in the first sentence is intentionally clarified here: the actual second output is NULL.
+**Explanation:** start() receives the value passed to suspend(). On resume, the Fiber continues and returns normally, so resume() returns null, which var_dump() displays as NULL.
 
 ## Practice exercise
 
