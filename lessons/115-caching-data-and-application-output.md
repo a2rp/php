@@ -1,4 +1,4 @@
-﻿# 115 - Caching data and application output
+# 115 - Caching data and application output
 
 ## Goals
 
@@ -148,4 +148,3 @@ Before enabling a cache, answer these questions:
 | Previous chapter | Chapter Q&A | Chapter example | Next chapter |
 | --- | --- | --- | --- |
 | [114 - Application configuration and logging](114-application-configuration-and-logging.md) | [Q&A](../qnas/115-caching-data-and-application-output.md) | [Example](../examples/115-caching-data-and-application-output.md) | [116 - PHP extensions and the extension ecosystem](116-php-extensions-and-the-extension-ecosystem.md) |
-
