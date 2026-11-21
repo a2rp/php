@@ -60,7 +60,7 @@ PHP provides other SAPIs, such as those used by a web server. Do not decide that
 On Windows, the CLI executable is commonly php.exe. A system can have multiple PHP installations, so inspect which executable the shell resolves:
 
 ~~~sh
-where php
+where.exe php
 ~~~
 
 On Unix-like systems, use:
