@@ -62,12 +62,13 @@ final class NoteRepositoryIntegrationTest extends TestCase
         $this->database->exec(
             'CREATE TABLE notes (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
-                title TEXT NOT NULL
+                title TEXT NOT NULL CHECK (length(trim(title)) > 0)
             )',
         );
 
         $this->notes = new NoteRepository($this->database);
     }
+
     public function testItSavesAndFindsANote(): void
     {
         $id = $this->notes->create('Integration test');
