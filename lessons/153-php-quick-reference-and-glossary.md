@@ -40,7 +40,8 @@ Comments explain decisions and non-obvious behavior. Prefer clear names and smal
 | --- | --- |
 | Scalar | bool, int, float, string |
 | Compound | array, object |
-| Special | null, resource, callable, iterable, mixed, never, void |
+| Other values and types | null, resource, callable, iterable, mixed |
+| Return-only types | void, never |
 
 Examples:
 
