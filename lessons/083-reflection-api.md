@@ -1,4 +1,4 @@
-﻿# 083 - Reflection API
+# 083 - Reflection API
 
 ## Learning goals
 

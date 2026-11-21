@@ -1,4 +1,4 @@
-﻿# 083 - Reflection API: Example
+# 083 - Reflection API: Example
 
 ## Question
 
@@ -10,8 +10,6 @@ How can a tool inspect a PHP class, its attribute, method parameters, property, 
 <?php
 
 declare(strict_types=1);
-
-use Attribute;
 
 #[Attribute(Attribute::TARGET_CLASS)]
 final class Component

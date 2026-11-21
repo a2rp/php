@@ -1,4 +1,4 @@
-﻿# 083 - Reflection API: Q&A
+# 083 - Reflection API: Q&A
 
 Each answer appears directly after its question and includes an explanation.
 
