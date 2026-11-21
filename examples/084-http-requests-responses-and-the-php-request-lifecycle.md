@@ -39,11 +39,11 @@ if ($method === 'GET') {
             sendText(400, 'Invalid JSON body.');
         }
 
-        if (!$data instanceof stdClass) {
+        if (!($data instanceof stdClass)) {
             sendText(400, 'Expected a JSON object.');
         }
 
-        $name$name = $data->name ?? null;
+        $name = $data->name ?? null;
     } else {
         // PHP populates $_POST for supported form content types.
         $name = $_POST['name'] ?? null;
