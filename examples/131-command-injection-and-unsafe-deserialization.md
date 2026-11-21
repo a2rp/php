@@ -23,7 +23,7 @@ declare(strict_types=1);
 function isValidLabel(mixed $value): bool
 {
     return is_string($value)
-        && preg_match('/`A[A-Za-z0-9 _-]{1,40}`z/', $value) === 1;
+        && preg_match('/\A[A-Za-z0-9 _-]{1,40}\z/', $value) === 1;
 }
 
 function runLabelWorker(string $label): string
