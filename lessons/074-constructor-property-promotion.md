@@ -110,7 +110,7 @@ class UserId
 }
 ~~~
 
-The constructor initializes the property automatically. Later writes are rejected. Read the previous chapter, [Readonly properties and classes](072-class-constants-and-constant-expressions.md), for the one-time initialization and shallow immutability rules.
+The constructor initializes the property automatically. Later writes are rejected. Read the previous chapter, [Readonly properties and classes](073-readonly-properties-and-classes.md), for the one-time initialization and shallow immutability rules.
 
 Promotion and readonly solve different parts of the declaration: promotion creates and initializes a property from a constructor parameter; readonly limits later writes.
 
