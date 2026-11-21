@@ -70,7 +70,7 @@ declare(strict_types=1);
 
 $label = $argv[1] ?? null;
 
-if (!is_string($label) || preg_match('/`A-Za-z0-9 _-`{1,40}`D/', $label) !== 1) {
+if (!is_string($label) || preg_match('/\A[A-Za-z0-9 _-]{1,40}\z/', $label) !== 1) {
     fwrite(STDERR, "Provide a label of 1 to 40 letters, numbers, spaces, underscores, or hyphens.`n");
     exit(2);
 }
