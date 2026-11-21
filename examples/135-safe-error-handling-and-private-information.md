@@ -86,12 +86,12 @@ The request returns HTTP 500 with a JSON body similar to this:
 ~~~http
 HTTP/1.1 500 Internal Server Error
 Content-Type: application/json; charset=utf-8
-X-Request-ID: 9c53a20b0e914ce4a6d26
+X-Request-ID: 9c53a20b0e914ce4a6d26f0c714b836a
 
 {
   "error": "internal_error",
   "message": "The request could not be completed.",
-  "requestId": "9c53a20b0e914ce4a6d26"
+  "requestId": "9c53a20b0e914ce4a6d26f0c714b836a"
 }
 ~~~
 
@@ -103,9 +103,9 @@ The PHP error log receives a JSON record similar to this:
 
 ~~~json
 {
-  "timestamp": "2026-01-15T12:34:56+00:00",
+  "timestamp": "2026-11-21T12:34:56+00:00",
   "event": "request_failed",
-  "request_id": "9c53a20b0e914ce4a6d26",
+  "request_id": "9c53a20b0e914ce4a6d26f0c714b836a",
   "exception_type": "RuntimeException",
   "http_status": 500
 }

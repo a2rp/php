@@ -6,9 +6,9 @@ These questions review the ideas in [Chapter 135](../lessons/135-safe-error-hand
 
 ### 1. Which production setup best protects visitors while preserving diagnostics?
 
-A. Display every PHP error and do not keep logs.  
-B. Disable error reporting and display every exception in the page.  
-C. Keep error reporting enabled, disable display, and log errors to a protected destination.  
+A. Display every PHP error and do not keep logs.
+B. Disable error reporting and display every exception in the page.
+C. Keep error reporting enabled, disable display, and log errors to a protected destination.
 D. Suppress all errors with the error-control operator.
 
 **Answer: C.**
@@ -17,9 +17,9 @@ D. Suppress all errors with the error-control operator.
 
 ### 2. What should an unexpected server failure normally return to a visitor?
 
-A. The stack trace and source file path.  
-B. A generic message, an appropriate server-error status, and optionally a server-generated request ID.  
-C. The raw exception message with HTTP 200.  
+A. The stack trace and source file path.
+B. A generic message, an appropriate server-error status, and optionally a server-generated request ID.
+C. The raw exception message with HTTP 200.
 D. The database error text so the user can report it.
 
 **Answer: B.**
@@ -28,9 +28,9 @@ D. The database error text so the user can report it.
 
 ### 3. Which information should generally be excluded from application logs?
 
-A. A stable event name.  
-B. A server-generated request ID.  
-C. A safe operation name and status.  
+A. A stable event name.
+B. A server-generated request ID.
+C. A safe operation name and status.
 D. Passwords, session IDs, access tokens, and full request bodies.
 
 **Answer: D.**
@@ -39,9 +39,9 @@ D. Passwords, session IDs, access tokens, and full request bodies.
 
 ### 4. What does setting display_errors to Off accomplish?
 
-A. It disables PHP diagnostics entirely.  
-B. It prevents PHP diagnostics from being displayed in the response.  
-C. It automatically encrypts the log file.  
+A. It disables PHP diagnostics entirely.
+B. It prevents PHP diagnostics from being displayed in the response.
+C. It automatically encrypts the log file.
 D. It catches parse errors in application code.
 
 **Answer: B.**
@@ -50,9 +50,9 @@ D. It catches parse errors in application code.
 
 ### 5. Which HTTP status is generally appropriate for an unexpected server-side failure?
 
-A. 200  
-B. 301  
-C. 404  
+A. 200
+B. 301
+C. 404
 D. 500
 
 **Answer: D.**
@@ -61,9 +61,9 @@ D. 500
 
 ### 6. Why use a request ID in an error response?
 
-A. It contains the exception trace in encoded form.  
-B. It lets the user identify a password reset token.  
-C. It gives support a safe value to correlate with protected diagnostic logs.  
+A. It contains the exception trace in encoded form.
+B. It lets the user identify a password reset token.
+C. It gives support a safe value to correlate with protected diagnostic logs.
 D. It replaces authorization checks.
 
 **Answer: C.**
