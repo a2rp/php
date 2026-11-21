@@ -55,8 +55,10 @@ function readAmountCents(string $path): Generator
 
             if (
                 count($row) !== 2
+                || !is_string($row[0])
                 || $row[0] === ''
                 || strlen($row[0]) > 64
+                || !is_string($row[1])
                 || !preg_match('/^(0|[1-9][0-9]*)$/D', $row[1])
             ) {
                 yield null;
