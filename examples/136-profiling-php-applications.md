@@ -45,7 +45,7 @@ for ($run = 0; $run < $sampleCount; $run++) {
     $result = normalizeNames($names);
     $finishedAt = hrtime(true);
 
-    $elapsedMilliseconds[] = ($finishedAt - $startedAt) / 1_000_000;
+    $elapsedMilliseconds[] = ($finishedAt - $startedAt) / 1000000;
     $checksum += count($result);
 }
 

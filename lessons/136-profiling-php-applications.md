@@ -44,7 +44,7 @@ $startedAt = hrtime(true);
 
 // Run the operation being measured.
 
-$elapsedMilliseconds = (hrtime(true) - $startedAt) / 1_000_000;
+$elapsedMilliseconds = (hrtime(true) - $startedAt) / 1000000;
 ~~~
 
 The absolute value returned by hrtime() has no useful calendar meaning. Measure a difference between two readings. For older runtimes, microtime(true) can be used for elapsed-time measurements, but remember that it is based on the system clock.
