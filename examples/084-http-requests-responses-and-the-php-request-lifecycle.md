@@ -1,4 +1,4 @@
-﻿# 084 - HTTP requests, responses, and the PHP request lifecycle: Example
+# 084 - HTTP requests, responses, and the PHP request lifecycle: Example
 
 ## Question
 
@@ -34,16 +34,16 @@ if ($method === 'GET') {
         $rawBody = file_get_contents('php://input');
 
         try {
-            $data = json_decode($rawBody, true, 512, JSON_THROW_ON_ERROR);
+            $data = json_decode($rawBody, false, 512, JSON_THROW_ON_ERROR);
         } catch (JsonException) {
             sendText(400, 'Invalid JSON body.');
         }
 
-        if (!is_array($data)) {
+        if (!$data instanceof stdClass) {
             sendText(400, 'Expected a JSON object.');
         }
 
-        $name = $data['name'] ?? null;
+        $name$name = $data->name ?? null;
     } else {
         // PHP populates $_POST for supported form content types.
         $name = $_POST['name'] ?? null;
